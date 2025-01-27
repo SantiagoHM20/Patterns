@@ -113,6 +113,8 @@ Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la
 
 ![image](Assets/plugin.png)
 
+![image](Assets/HelloWorld.png)
+
 El comando es mvn exec:java
 Porque java es el nombre de nuestro objetivo
 
