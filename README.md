@@ -110,5 +110,4 @@ Para compilar ejecute el comando mvn package
 Busque cuál es el objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn.
 
 Lo que se hace al momento de poner mvn package, recorre varios ciclos de vida, como compilar el codigo fuente o compilar las pruebas. 
-
 Despues de eso crea un archivo empaquetado .jar o .war para poder ser distribuido o desplegado. Este comando permite asegurarse que el codigo este listo y sea probado antes de ser 
