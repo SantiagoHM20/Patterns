@@ -12,8 +12,8 @@
   <url>http://www.example.com</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
 
   <dependencyManagement>
@@ -84,6 +84,29 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.6.1</version>
         </plugin>
+       
+       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.5.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          
+          <mainClass>edu.eci.cvds.patterns.archetype.App</mainClass>
+          <arguments>
+              <argument>Andrés</argument>
+              
+          </arguments>
+        </configuration>
+        </plugin>
+
+
       </plugins>
     </pluginManagement>
   </build>
