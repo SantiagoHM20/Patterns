@@ -107,4 +107,12 @@ Para compilar ejecute el comando mvn package
 
 ![image](Assets/mvnPackage.png)
 
-..
+
+
+Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en "mainClass". Tip:
+
+![image](Assets/plugin.png)
+
+El comando es mvn exec:java
+Porque java es el nombre de nuestro objetivo
+
