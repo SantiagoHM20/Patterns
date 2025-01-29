@@ -115,6 +115,46 @@ Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la
 
 ![image](Assets/HelloWorld.png)
 
-El comando es mvn exec:java
+El comando es mvn exec:java 
 Porque java es el nombre de nuestro objetivo
 
+Realice el cambio en la clase App.java para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación.
+
+![image](Assets/Mensaje%20personalizado.png)
+
+Utilizar la primera posición del parámetro que llega al método "main" para realizar elsaludo personalizado, en caso que no sea posible, se debe mantener el saludo como se encuentra actualmente:
+
+![image](Assets/Mensaje%20personalizado%20si%20hay%20argumento.png)
+
+Buscar cómo enviar parámetros al plugin "exec".
+
+#### mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.archetype.App" -Dexec.args="Aquí el parametro"
+
+
+Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: Hello World!
+
+
+![image](Assets/VerificarHelloWorld.png)
+
+
+Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
+
+![alt text](Assets/VerificarArgumento.png)
+
+
+Ejecutar la clase con su nombre y apellido como parámetro. ¿Qué sucedió?
+
+![alt text](Assets/ApellidoIgnorado.png)
+
+
+Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo se realice con nombre y apellido.
+
+![alt text](Assets/CodigoPara2Parametros.png)
+
+
+#### Solo hizo falta agregar la segunda posición de args "args[1]" e incluírla en el mensaje mediante %s porque es un String
+
+
+Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
+
+![alt text](Assets/MensajeCon2Parametros.png)

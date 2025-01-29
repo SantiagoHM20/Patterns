@@ -5,6 +5,10 @@ package edu.eci.cvds.patterns.archetype;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hola", args[0], "¿Cómo estás?");
+        if (args.length > 0) {
+            System.out.printf("Hola %s %s, ¿Cómo estás?%n", args[0], args[1]);
+        } else {
+            System.out.println("Hello world");
+        }
     }
 }

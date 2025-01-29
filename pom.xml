@@ -98,11 +98,7 @@
         </executions>
         <configuration>
           
-          <mainClass>edu.eci.cvds.patterns.archetype.App</mainClass>
-          <arguments>
-              <argument>Andrés</argument>
-              
-          </arguments>
+          <mainClass>edu.eci.cvds.patterns.archetype.App</mainClass> 
         </configuration>
         </plugin>
 
