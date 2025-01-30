@@ -158,3 +158,7 @@ Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo s
 Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
 
 ![alt text](Assets/MensajeCon2Parametros.png)
+
+Cree el paquete edu.eci.cvds.patterns.shapes y el paquete edu.eci.cvds.patterns.shapes.concrete.
+
+![image](Assets/Paquetes.png)
