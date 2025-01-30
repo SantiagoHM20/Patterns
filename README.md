@@ -162,3 +162,11 @@ Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
 Cree el paquete edu.eci.cvds.patterns.shapes y el paquete edu.eci.cvds.patterns.shapes.concrete.
 
 ![image](Assets/Paquetes.png)
+
+Cree una interfaz llamada Shape.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes de la siguiente manera:
+
+![image](Assets/InterfazShape.png)
+
+Cree una enumeración llamada RegularShapeType.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes así:
+
+![image](Assets/Enumclass.png)
