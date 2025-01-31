@@ -170,3 +170,12 @@ Cree una interfaz llamada Shape.java en el directorio src/main/java/edu/eci/cvds
 Cree una enumeración llamada RegularShapeType.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes así:
 
 ![image](Assets/Enumclass.png)
+
+En el directorio src/main/java/edu/eci/cvds/patterns/shapes/concrete cree las diferentes clases (Triangle, Quadrilateral, Pentagon, Hexagon), que implementen la interfaz creada y retornen el número correspondiente de vértices que tiene la figura.
+
+![image](Assets/Triangle.png)
+![image](Assets/Quadrilateral.png)
+![image](Assets/Pentagon.png)
+![image](Assets/Hexagon.png)
+.
+
