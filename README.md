@@ -177,5 +177,15 @@ En el directorio src/main/java/edu/eci/cvds/patterns/shapes/concrete cree las di
 ![image](Assets/Quadrilateral.png)
 ![image](Assets/Pentagon.png)
 ![image](Assets/Hexagon.png)
-.
 
+
+![image](Assets/ShapeFactory.png)
+![image](Assets/Shapemain.png)
+
+¿Cuál fábrica hiciste? y ¿Cuál es mejor?
+
+Nos decidimos por aplicar Simple Factory ya que la logica es muy simple y no vamos a extender mucho el proyecto.
+
+Factory Method sería mejor que Simple Factory por su extensibilidad.
+
+Abstract Factory sería mejor que Factory Method si se necesita crear distintos tipos(No formas) de figuras. 
