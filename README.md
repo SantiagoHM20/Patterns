@@ -206,7 +206,7 @@ Parámetro: pentagon
 
 Parámetro: Hexagon
 
-![image](Assets/Hexagon.png)
+![image](Assets/Hex.png)
 
 ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
 
