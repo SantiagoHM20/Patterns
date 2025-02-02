@@ -189,3 +189,27 @@ Nos decidimos por aplicar Simple Factory ya que la logica es muy simple y no vam
 Factory Method sería mejor que Simple Factory por su extensibilidad.
 
 Abstract Factory sería mejor que Factory Method si se necesita crear distintos tipos(No formas) de figuras. 
+
+Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
+
+Sin parámetros:
+
+![image](Assets/Sinparametros.png)
+
+Parámetro: qwerty
+
+![image](Assets/qwrty.png)
+
+Parámetro: pentagon
+
+![image](Assets/Pentagon.png)
+
+Parámetro: Hexagon
+
+![image](Assets/Hexagon.png)
+
+¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
+
+Solo Hexagon, cuando estamos sin parametros, dice que se necesita de un parametro para funcionar, en caso de pentagon y qwrty, piden de 
+que se necesita de un parametro valido, en caso de qwrty al ser letras al azar, no vuenta como parametro buscado y en pentagon, no cuenta ya que la 
+primera letra debe estar en mayusculas
