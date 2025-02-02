@@ -1,6 +1,8 @@
 # Laboratorio2CVDS
 Laboratorio 2 de Ciclos de vida del desarrollo del software
 
+Intregantes: Santiago Hurtado, Andrés Calderon
+
 Entender apache
 
 #### Cuál es su mayor utilidad
