@@ -107,6 +107,9 @@ Para compilar ejecute el comando mvn package
 
 ![image](Assets/mvnPackage.png)
 
+Busque cuál es el objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn.
+
+Lo que se hace al momento de poner mvn package, recorre varios ciclos de vida, como compilar el codigo fuente o compilar las pruebas. Despues de eso crea un archivo empaquetado .jar o .war para poder ser distribuido o desplegado. Este comando permite asegurarse que el codigo este listo y sea probado antes de ser mandado a produccion
 
 
 Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en "mainClass". Tip:
@@ -170,3 +173,46 @@ Cree una interfaz llamada Shape.java en el directorio src/main/java/edu/eci/cvds
 Cree una enumeración llamada RegularShapeType.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes así:
 
 ![image](Assets/Enumclass.png)
+
+En el directorio src/main/java/edu/eci/cvds/patterns/shapes/concrete cree las diferentes clases (Triangle, Quadrilateral, Pentagon, Hexagon), que implementen la interfaz creada y retornen el número correspondiente de vértices que tiene la figura.
+
+![image](Assets/Triangle.png)
+![image](Assets/Quadrilateral.png)
+![image](Assets/Pentagon.png)
+![image](Assets/Hexagon.png)
+
+
+![image](Assets/ShapeFactory.png)
+![image](Assets/Shapemain.png)
+
+¿Cuál fábrica hiciste? y ¿Cuál es mejor?
+
+Nos decidimos por aplicar Simple Factory ya que la logica es muy simple y no vamos a extender mucho el proyecto.
+
+Factory Method sería mejor que Simple Factory por su extensibilidad.
+
+Abstract Factory sería mejor que Factory Method si se necesita crear distintos tipos(No formas) de figuras. 
+
+Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
+
+Sin parámetros:
+
+![image](Assets/Sinparametros.png)
+
+Parámetro: qwerty
+
+![image](Assets/qwrty.png)
+
+Parámetro: pentagon
+
+![image](Assets/Pentagon.png)
+
+Parámetro: Hexagon
+
+![image](Assets/Hex.png)
+
+¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
+
+Solo Hexagon, cuando estamos sin parametros, dice que se necesita de un parametro para funcionar, en caso de pentagon y qwrty, piden de 
+que se necesita de un parametro valido, en caso de qwrty al ser letras al azar, no vuenta como parametro buscado y en pentagon, no cuenta ya que la 
+primera letra debe estar en mayusculas
